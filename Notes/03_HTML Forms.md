@@ -31,6 +31,7 @@ Used for various types of user input.
 <input type="radio" name="gender" value="male"> Male
 <input type="radio" name="gender" value="female"> Female
 <input type="number" name="age" placeholder="e.g., 25">
+<input type="date" name="dob">
 ```
 
 - `type`: Defines the input type (`text`, `email`, `password`, `checkbox`, `radio`, etc.).
