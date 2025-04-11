@@ -15,9 +15,6 @@ HTML provides specific tags to **quote**, **cite**, and **reference** text prope
 </blockquote>
 ```
 
-### Notes:
-- The optional `cite` attribute gives the **URL of the source**.
-
 ---
 
 ## 2. `<q>`
