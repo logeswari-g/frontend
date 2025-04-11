@@ -158,7 +158,23 @@ HTML tags are used to create HTML elements. They define the structure and conten
 <p>This is a <span style="color: red;">red word</span> in a sentence.</p>
 ```
 
-### Form Tags:
-- `<form>`, `<input>`, `<textarea>`, `<button>`, `<select>`, `<option>`: Used for user input.
+- `<!-- Comments -->`: You can add comments to your HTML source.
+
+```html
+<!-- This is a comment -->
+```
+
+- `<link>`: Used to **link external resources** to the HTML document.
+
+```html
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+```
+
+- `<iframe>`: An HTML iframe is used to display a web page within a web page.
+
+```html
+<iframe src="demo_iframe.html" height="200" width="300" title="Iframe Example"></iframe>
+```
 
 ---
