@@ -6,43 +6,43 @@ Attributes provide additional information about HTML elements. They are always s
 
 ### Common Attributes:
 
-### 📌 `id`: Uniquely identifies an element.
+### `id`: Uniquely identifies an element.
 
   ```html
   <div id="header"></div>
   ```
-### 📌`class`: Specifies one or more class names for styling with CSS.
+### `class`: Specifies one or more class names for styling with CSS.
 
   ```html
   <p class="highlight"></p>
   ```
-### 📌 `style`: Adds inline CSS to an element.
+### `style`: Adds inline CSS to an element.
 
   ```html
   <h1 style="color: blue;">Hello</h1>
   ```
-### 📌 `title`: Provides additional information, shown as a tooltip.
+### `title`: Provides additional information, shown as a tooltip.
 
   ```html
   <abbr title="World Health Organization">WHO</abbr>
   ```
-### 📌 `href`: Specifies the URL for links.
+### `href`: Specifies the URL for links.
 
   ```html
   <a href="https://example.com">Visit</a>
   ```
-### 📌 `src`: Specifies the path to images or external media.
+### `src`: Specifies the path to images or external media.
 
   ```html
   <img src="image.jpg" alt="Sample Image">
   ```
-### 📌 `alt` – Provides alternative text for images.
+### `alt` – Provides alternative text for images.
 
 ```html
 <img src="logo.png" alt="Company Logo">
 ```
 
-### 📌 `target` – Specifies where to open a linked document.
+### `target` – Specifies where to open a linked document.
 
     1. `_blank`: Opens in a new tab.
     2. `_self`: Opens in the same window (default).
@@ -51,19 +51,19 @@ Attributes provide additional information about HTML elements. They are always s
 <a href="https://www.google.com" target="_blank">Open Google in new tab</a>
 ```
 
-### 📌 `disabled` – Disables form elements.
+### `disabled` – Disables form elements.
 
 ```html
 <input type="text" value="Can't edit this" disabled>
 ```
 
-### 📌 `readonly` – Makes input read-only (user cannot edit the value, but it is still submitted with the form).
+### `readonly` – Makes input read-only (user cannot edit the value, but it is still submitted with the form).
 
 ```html
 <input type="text" value="Read-only value" readonly>
 ```
 
-### 📌 `checked` – Pre-selects radio/checkbox options(Automatically selects the input when the page loads)
+### `checked` – Pre-selects radio/checkbox options(Automatically selects the input when the page loads)
 
 ```html
 <input type="checkbox" name="subscribe" checked> Subscribe to newsletter
