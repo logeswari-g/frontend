@@ -4,7 +4,7 @@ HTML allows embedding of multimedia content like **audio**, **video**, and **ima
 
 ---
 
-## 🎞️ 1. `<img>` – Images
+## 1. `<img>` – Images
 
 - Used to embed images into the webpage.
 - Requires the `src` (image path) and `alt` (alternative text) attributes.
