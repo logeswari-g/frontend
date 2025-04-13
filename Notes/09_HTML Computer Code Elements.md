@@ -4,18 +4,6 @@ HTML provides special elements to display **computer code**, **keyboard input**,
 
 ---
 
-## Common Code-Related Elements
-
-| Tag        | Description |
-|------------|-------------|
-| `<code>`   | Represents a piece of computer code |
-| `<pre>`    | Displays preformatted text (preserves spacing, tabs, line breaks) |
-| `<kbd>`    | Indicates keyboard input |
-| `<samp>`   | Represents sample output from a computer program |
-| `<var>`    | Defines a variable in programming or math expressions |
-
----
-
 ## 1. `<code>` – Code Snippets
 
 Used to wrap inline or block-level programming code.
