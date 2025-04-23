@@ -42,7 +42,7 @@ Aligns items along the **cross axis**.
 
 ```css
 .container {
-  align-items: stretch | flex-start | flex-end | center | baseline;
+  align-items: stretch | flex-start | flex-end | center;
 }
 ```
 
