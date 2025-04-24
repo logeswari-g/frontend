@@ -85,13 +85,4 @@ Controls the order of items (default is 0).
   order: 1;
 }
 ```
-
-### 3. `align-self`
-Overrides the container's `align-items` for individual items.
-
-```css
-.item {
-  align-self: auto | flex-start | flex-end | center | baseline | stretch;
-}
-```
 ---
