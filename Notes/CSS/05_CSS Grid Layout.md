@@ -33,15 +33,51 @@ grid-template-columns: 1fr 2fr; /* First column: 1 part, second: 2 parts */
 
 - Auto-fit/auto-fill with repeat:
 
+Need to use minmax() while using autofit or auto-fill
+
 | Feature      | auto-fill                                  | auto-fit                                |
 |--------------|---------------------------------------------|------------------------------------------|
 | Empty slots  | Reserves space for invisible columns        | Collapses empty columns                  |
 | Behavior     | Keeps the grid size even if items are missing | Makes columns stretch to fill space   |
 | Use case     | You want the layout to keep the structure   | You want items to grow and fill the row  |
 
+```
+.grid {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
 
-```css
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.grid-item {
+  background: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+<h2>auto-fill</h2>
+<div class="grid auto-fill">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+</div>
+
+<h2>auto-fit</h2>
+<div class="grid auto-fit">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+</div>
+
 ```
 
 ---
