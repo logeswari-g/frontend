@@ -33,6 +33,13 @@ grid-template-columns: 1fr 2fr; /* First column: 1 part, second: 2 parts */
 
 - Auto-fit/auto-fill with repeat:
 
+| Feature      | auto-fill                                  | auto-fit                                |
+|--------------|---------------------------------------------|------------------------------------------|
+| Empty slots  | Reserves space for invisible columns        | Collapses empty columns                  |
+| Behavior     | Keeps the grid size even if items are missing | Makes columns stretch to fill space   |
+| Use case     | You want the layout to keep the structure   | You want items to grow and fill the row  |
+
+
 ```css
 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 ```
@@ -70,6 +77,10 @@ grid-gap: 10px;
 
 ## 6. Named Grid Areas
 
+Named Grid Areas in CSS Grid allow you to assign semantic names to different parts of your layout using grid-template-areas, which makes grid layouts more readable, maintainable, and easier to manage.
+
+In the Grid Container:
+
 ```css
 .container {
   display: grid;
@@ -80,11 +91,22 @@ grid-gap: 10px;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 1fr auto;
 }
+```
 
+In the Grid Items:
+
+```
 .header { grid-area: header; }
 .sidebar { grid-area: sidebar; }
 .main { grid-area: main; }
 .footer { grid-area: footer; }
 ```
+
+## How It Works
+
+Each row in grid-template-areas is a string.
+Each string consists of area names (identifiers like "header", "main").
+The same name can be repeated to span columns or rows.
+You can use a . (dot) to define an empty cell.
 
 ---
