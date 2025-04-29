@@ -41,7 +41,7 @@ Need to use minmax() while using autofit or auto-fill
 | Behavior     | Keeps the grid size even if items are missing | Makes columns stretch to fill space   |
 | Use case     | You want the layout to keep the structure   | You want items to grow and fill the row  |
 
-```
+```html
 .grid {
   display: grid;
   gap: 10px;
@@ -131,7 +131,7 @@ In the Grid Container:
 
 In the Grid Items:
 
-```
+```css
 .header { grid-area: header; }
 .sidebar { grid-area: sidebar; }
 .main { grid-area: main; }
