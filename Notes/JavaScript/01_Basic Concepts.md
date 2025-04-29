@@ -118,7 +118,9 @@ console.log("Hello from console!");
 <html>
 <head>
   <script defer>
-    console.log(document.getElementById("demo").innerText); // Outputs: Hello from body
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log(document.getElementById("demo").innerText);
+    });
   </script>
 </head>
 <body>
@@ -135,10 +137,11 @@ console.log("Hello from console!");
 ```html
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<title>Test</title>
+</head>
 <body>
   <p id="demo">Hello from body</p>
-
   <script>
     console.log(document.getElementById("demo").innerText); // Outputs: Hello from body
   </script>
