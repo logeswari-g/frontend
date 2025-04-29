@@ -141,9 +141,9 @@ In the Grid Items:
 
 ### How It Works
 
-[^1]: Each row in grid-template-areas is a string.
-[^2]: Each string consists of area names (identifiers like "header", "main").
-[^3]: The same name can be repeated to span columns or rows.
-[^4]: You can use a . (dot) to define an empty cell.
+Each row in grid-template-areas is a string.\
+Each string consists of area names (identifiers like "header", "main").\
+The same name can be repeated to span columns or rows.\
+You can use a . (dot) to define an empty cell.
 
 ---
