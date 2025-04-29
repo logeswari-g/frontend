@@ -25,13 +25,13 @@ Defines the number and size of columns in the grid.
 }
 ```
 
-- Use `fr` unit for flexible layouts:
+### Use `fr` unit for flexible layouts:
 
 ```css
 grid-template-columns: 1fr 2fr; /* First column: 1 part, second: 2 parts */
 ```
 
-- Auto-fit/auto-fill with repeat:
+### Auto-fit/auto-fill with repeat:
 
 Need to use minmax() while using autofit or auto-fill
 
@@ -139,11 +139,11 @@ In the Grid Items:
 .footer { grid-area: footer; }
 ```
 
-## How It Works
+### How It Works
 
-Each row in grid-template-areas is a string.
-Each string consists of area names (identifiers like "header", "main").
-The same name can be repeated to span columns or rows.
-You can use a . (dot) to define an empty cell.
+[^1]: Each row in grid-template-areas is a string.
+[^2]: Each string consists of area names (identifiers like "header", "main").
+[^3]: The same name can be repeated to span columns or rows.
+[^4]: You can use a . (dot) to define an empty cell.
 
 ---
