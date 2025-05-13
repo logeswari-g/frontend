@@ -1,4 +1,4 @@
-# JavaScript DOM: Methods and Properties
+# DOM: Methods and Properties
 
 The **Document Object Model (DOM)** represents the structure of a web page in a tree-like format. JavaScript uses **DOM methods and properties** to access, change, add, or delete HTML elements.
 
@@ -66,12 +66,3 @@ document.body.appendChild(newPara);                // add
 ```
 
 ---
-
-## Summary
-
-| Category        | Examples                                      |
-|----------------|-----------------------------------------------|
-| Access Elements| `getElementById`, `querySelector`             |
-| Read/Write Data| `innerHTML`, `textContent`, `value`           |
-| Modify Elements| `setAttribute`, `classList.add()`             |
-| Create/Remove  | `createElement`, `appendChild`, `removeChild` |
