@@ -66,7 +66,4 @@ allParagraphs.forEach(p => console.log(p.textContent));
 let nestedSpan = document.querySelector("#container span");
 console.log(nestedSpan.textContent);
 ```
-
-```
-
 ---
