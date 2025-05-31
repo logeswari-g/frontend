@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Area Named Layout</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 150px auto;
+      grid-template-rows: 150px 150px;
+      grid-template-areas:
+        "header sidebar"
+        "main main";
+      gap: 10px;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    .grid-container > div {
+      padding: 20px;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .header {
+      background-color: #2196f3;
+      grid-area: header;
+    }
+
+    .sidebar {
+      background-color: #4caf50;
+      grid-area: sidebar;
+    }
+
+    .main {
+      background-color: #ff5722;
+      grid-area: main;
+    }
+
+    .side{
+      background-color: #ffff22;
+      grid-area: side;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Grid Layout Using Named Grid Areas</h2>
+
+  <div class="grid-container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main Content</div>
+    <div class="side">side</div>
+  </div>
+
+</body>
+</html>

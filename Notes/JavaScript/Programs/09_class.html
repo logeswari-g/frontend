@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="item1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.Lore e magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.LoreLorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.Lore</div>
+    <div class="item2">2</div>
+    <div class="item3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni asperiores soluta vel ut blanditiis, voluptas ab voluptates, inventore magnam optio officia vitae neque in autem! Repellat accusantium soluta doloremque.</div>
+  </div>
+  
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      /* align-content: flex-end; */
+      height: 500px;
+      border: 2px solid #ccc;
+      margin: 20px;
+    }
+  
+    .item1 {
+      background-color: goldenrod;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      border: solid green;
+      order: 3;
+      /* flex-grow:1; */
+      flex-basis: 200px;
+    }
+    .item2 {
+      background-color: lightcoral;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      border: solid green;
+      order: 1;
+      flex-grow:2;
+      align-self: center;
+      /* flex-shrink: 1;
+      flex-basis: 200px; */
+    }
+    .item3 {
+      background-color: yellowgreen;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      border: solid green;
+      order: 2;
+      flex-basis: 100px;
+      /* flex-grow:1; */
+      /* flex-shrink: 1;
+      flex-basis: 200px; */
+    }
+  </style>
+
+</body>
+</html>

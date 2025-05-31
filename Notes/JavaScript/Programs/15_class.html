@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title> 
+    <script>
+        function showMessage(element)
+        {
+            console.log(element.style);
+            element.innerText = "Clicked by the user!";
+            element.style.backgroundColor = 'Yellow';
+            element.style.border = 'block';
+            element.style.fontFamily = "Consolas";
+        }
+        function styleMe(el) {
+            el.style.backgroundColor = "purple";
+            el.style.color = "white";
+            el.style.fontSize = "20px";
+            el.style.borderRadius = "10px";
+            el.style.padding = "10px 20px";
+        }
+    </script>
+</head>
+<body>
+<button onclick="showMessage(this)">Click me</button>
+<button onclick="styleMe(this)">Style Me</button>
+</body>
+</html>

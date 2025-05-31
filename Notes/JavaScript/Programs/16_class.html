@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Selection Example</title>
+  <style>
+    .main {
+      color: mediumslateblue;
+      font-weight: bold;
+    }
+    .title {
+      font-style: italic;
+    }
+    /* #id{
+      font-size: 50px;
+    } */
+  </style>
+</head>
+<body>
+  
+  <h1 id="sample">Welcome!</h1>
+  <h2 id="sample">New!</h1>
+
+  <p class="info">This is a paragraph.</p>
+  <p class="info">This is another paragraph.</p>
+
+  <ul>
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 2</li>
+  </ul>
+
+  <div id="container">
+    <span>Nested span inside div</span>
+    <p>gregfhjkll</p>
+  </div>
+
+  <script>
+    // 1. getElementById (return first match)
+    let title = document.getElementById("sample");
+    console.log("getElementById:", title.innerHTML);
+    title.classList.add('main', 'title')
+
+    // 2. getElementsByClassName (return multiple match as array)
+    let paragraphs = document.getElementsByClassName("info");
+    paragraphs[0].style.color = "blue";
+    paragraphs[1].style.color = "palevioletred";
+
+    // 3. getElementsByTagName (return multiple match as list)
+    let listItems = document.getElementsByTagName("li");
+    console.log("getElementsByTagName:", listItems[1].textContent);
+    listItems[1].style.backgroundColor = "#f0f0f0";
+
+    // 4. querySelector (return first match)
+    let firstItem = document.querySelector("li");
+    console.log("querySelector:", firstItem.textContent);
+    firstItem.textContent = "changed";
+    firstItem.style.fontStyle = "italic";
+
+    // 5. querySelectorAll (return multiple match as list)
+    let allParagraphs = document.querySelectorAll(".item");
+    for (let i = 0; i < allParagraphs.length; i++) {
+      console.log(`querySelectorAll [${i}]:`, allParagraphs[i].textContent);
+      allParagraphs[i].style.marginLeft = "20px";
+    }
+
+    // Bonus: nested selection
+    let nestedSpan = document.querySelector("#container p");
+    console.log("Nested selection:", nestedSpan.textContent);
+    nestedSpan.style.textDecoration = "underline";
+  </script>
+
+</body>
+</html>

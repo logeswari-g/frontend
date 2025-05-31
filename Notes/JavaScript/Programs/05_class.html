@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="email"] {
+            border: 1px solid blue;
+        }
+        a[target] {
+            color: green;
+        } */
+        .note {
+            color: orange;
+        }
+        div {
+            color: purple;
+        }
+        #id {
+            color: aqua;
+        }
+        h1, h2 {
+            font-family: Arial;
+            font-weight: 300;
+            color: brown;
+        }
+        div p {
+            color: palevioletred;
+        }
+        div > p {
+             color: teal;
+        }
+        a:hover {
+            color: red;
+            font-size: larger;
+        }
+        li:first-child {
+            font-weight: bold;
+        }
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="email" name="email" placeholder="Enter your email">
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <h1>
+        Example Started
+    </h1>
+    <p class="p">Content to be changed</p>
+    <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This is example for inline css.</p>
+    <p class="note">Example for classname</p>
+    <div>
+       <p> Content to test Descendant </p>
+       <span> <p> bhjfsdhsd </p></span>
+    </div>
+    <p id="id">Example for id</p>
+    <p> Tested </p>
+    <ul>
+        <li>
+            List 1
+        </li>
+        <li>
+            List 2
+        </li>
+    </ul>
+</body>
+</html>

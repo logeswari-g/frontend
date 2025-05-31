@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Window Properties Demo</title>
+</head>
+<body>
+  <h1>JavaScript Window Properties</h1>
+  <button onclick="showWindowDetails()">Show Window Info</button>
+  <div id="output" style="margin-top:20px; font-family: monospace;"></div>
+
+  <script>
+    function showWindowDetails() {
+      window.localStorage.setItem("user", "Alice");
+
+      let details = `
+        <strong>Viewport Size:</strong> ${window.innerWidth} x ${window.innerHeight}<br>
+        <strong>Screen Size:</strong> ${window.screen.width} x ${window.screen.height}<br>
+        <strong>Location:</strong> ${window.location.href}<br>
+        <strong>Hostname:</strong> ${window.location.hostname}<br>
+        <strong>Protocol:</strong> ${window.location.protocol}<br>
+        <strong>Stored User:</strong> ${window.localStorage.getItem("user")}<br>
+        <strong>Browser Info:</strong> ${window.navigator.userAgent}<br>
+        <strong>Language:</strong> ${window.navigator.language}<br>
+        <strong>Online:</strong> ${window.navigator.onLine}<br>
+        <strong>Document Title:</strong> ${window.document.title}<br>
+        <strong>History Length:</strong> ${window.history.length}<br>
+      `;
+
+      document.getElementById("output").innerHTML = details;
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

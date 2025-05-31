@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Variable Scope Demo</title>
+</head>
+<body>
+  <h2>Open the browser console to see the output</h2>
+
+  <script>
+
+    function arrayconcepts()
+    {
+      let fruits = ["apple", "banana", "orange", 'grapes'];
+      // console.log(fruits);
+      // fruits.splice(1, 2, "pear", "grapes"); // (index, deletecount, item1...)
+      // console.log(fruits);
+
+      let numbers= [1, 2, 3, 4]
+      // console.log(numbers.length)
+      // for (let i = 0; i <= numbers.length; i++) {
+      //   console.log(fruits[i]);
+      // }
+      for (let fruit of fruits) {
+        console.log('each ', fruit);
+      }
+    }
+
+    // function objectconcepts() {
+    //     let person = {
+    //     name: "Alice",
+    //     age: 25
+    //   };
+
+    //   console.log(person.age)
+    //   person.gender = 'Male'
+    //   person.age = 30
+    //   console.log(person)
+    // }
+
+    // objectconcepts()
+
+  //   let person = {
+  //   name: "Asha",
+  //   greet: function () {
+  //     console.log("Hello, my name is " + this.name);
+  //   }
+  // };
+
+  // person.greet();
+
+    function show() {
+    console.log(this);
+  }
+
+  show();
+
+    // arrayconcepts()
+    // function show() {
+    //   console.log(this);
+    // }
+
+    // function showMessage(element) {
+    //   console.log(this);
+    //   element.innerText = "Clicked!";
+    //   element.style.backgroundColor =  'pink';
+    // }
+    // show();
+
+    // 1. var - Function Scope
+    function varExample() {
+      if (true) {
+      //   var x = 10;
+      //   console.log("Inside if (var):", x);
+      // }
+      // console.log("Outside if (var):", x);
+      
+      }
+    }
+
+    // 2. let - Block Scope
+    function letExample() {
+      if (true) {
+        let y = 20;
+        return("Inside if (let):"+ y);
+      }
+      try {
+        return("Outside if (let):"+ y);
+      } catch (e) {
+        return("Outside if (let): Error -"+ e.message);
+      }
+    }
+
+    // 3. const - Block Scope
+    function constExample() {
+      if (true) {
+        const z = 30;
+        console.log("Inside if (const):", z);
+      }
+      try {
+        console.log("Outside if (const):", z);
+      } catch (e) {
+        console.log("Outside if (const): Error -", e.message);
+      }
+    }
+
+    // console.log("🔹 var scope:");
+    // varExample();
+
+    // console.log("\n🔹 let scope:");
+    let data = letExample();
+    // console.log(data)
+
+    // console.log("\n🔹 const scope:");
+    // constExample();
+
+    // function greet(name)
+    // {
+    //   return("Hello "+ name)
+    // }
+    // output =greet("John")
+    // console.log(output);
+
+    function loopex()
+    {
+      if(true)
+      {
+        for (let i = 1; i <= 10; i++) {
+
+          console.log("Count:", i);
+        }
+      }
+    }
+    // loopex()
+
+  </script>
+  <button onclick="showMessage(this)">Click me</button>
+</body>
+</html>

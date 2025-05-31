@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Properties Demo</title>
+  <style>
+    /* CSS Colors */
+    .named-color {
+      color: red;
+    }
+    .hex-color {
+      color: #FFA500;
+    }
+    .rgb-color {
+      color: rgb(255, 215, 0);
+    }
+    .rgba-bg {
+      background-color: rgba(120, 42, 120, 0.3);
+    }
+    .hsl-color {
+      color: hsl(76, 63%, 41%);
+    }
+    .hsla-bg {
+      background-color: hsla(150, 80%, 60%, 0.3);
+    }
+
+    /* CSS Text & Fonts */
+    .text-style {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      text-transform: uppercase;
+      line-height: 1.5;
+      letter-spacing: 2px;
+    }
+
+    /* CSS Backgrounds */
+    .background-demo {
+      background-color: #c1b0b0;
+      color: cadetblue;
+      background-image: url('image.jpg');
+      background-repeat: repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* CSS Borders */
+    .border-demo {
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .rounded {
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    /* Display & Visibility */
+    .inline-example {
+      display: inline;
+      background-color: yellow;
+    }
+    .block-example {
+      display: block;
+      background-color: lightgreen;
+    }
+    .inline-block-example {
+      display: inline-block;
+      background-color: lightblue;
+      padding: 5px;
+    }
+    .none-example {
+      display: none;
+    }
+
+    .visibility-hidden {
+      visibility: hidden;
+    }
+
+    .overflow-box {
+      width: 200px;
+      height: 100px;
+      overflow: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="named-color">Named Color</h2>
+  <h2 class="hex-color">HEX Color</h2>
+  <h2 class="rgb-color">RGB Color</h2>
+  <div class="rgba-bg">RGBA Background</div>
+  <h2 class="hsl-color">HSL Color</h2>
+  <div class="hsla-bg">HSLA Background</div>
+
+  <hr>
+
+  <p class="text-style">This is styled text using various font and text properties.</p>
+
+  <hr>
+
+  <div class="background-demo">CSS Background Properties</div>
+
+  <hr>
+
+  <div class="border-demo">This has a solid border</div>
+  <div class="rounded">This box has rounded corners</div>
+
+  <hr>
+
+  <span class="inline-example">Inline Element</span>
+  <div class="block-example">Block Element</div>
+  <span class="inline-block-example">Inline-Block Element</span>
+  <div class="none-example">This is hidden using display: none</div>
+<p>nsvnbsvsha</p>
+  <p class="visibility-hidden">This text is hidden using visibility: hidden</p>
+
+  <div class="overflow-box">
+    This box has overflow set to auto. If the content is long, scrollbars will appear.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus orci in odio vehicula tincidunt.asasaSAAAAAAAAAAAAAAAAAAAAAAAAA
+  </div>
+
+</body>
+</html>

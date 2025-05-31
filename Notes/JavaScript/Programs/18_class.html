@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <script>
+    window.onload = function () {
+      alert("Welcome to Student Registration!");
+
+      let name = prompt("Enter your name:", "Student");
+      if (name) {
+        document.getElementById("name").value = name;
+      }
+    };
+
+    function submitForm(event) {
+      event.preventDefault();
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      let isConfirmed = confirm(`Do you want to submit the form with:\nName: ${name}\nEmail: ${email}?`);
+      if (isConfirmed) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Submission cancelled.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Student Registration</h1>
+  <form onsubmit="submitForm(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

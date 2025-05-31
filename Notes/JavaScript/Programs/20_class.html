@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <script>
+
+    function submitForm(event) {
+      try {
+        a = int(document.getElementById("name").value);
+        type = typeof(a)
+        console.log(type)
+        let result = a.toUpperCase();
+        alert(`result:${result}`);
+      } catch (err) {
+        alert("Enter proper Data");
+      } 
+    finally {
+        confirm("Confirm");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Uppercase</h1>
+  <form onsubmit="submitForm(event)">
+    <label for="name">Text to Change:</label>
+    <input type="text" id="name" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

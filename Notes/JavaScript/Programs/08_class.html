@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="box">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  <div class="box sticky">Sticky</div>
+</div>
+
+<style>
+  .container {
+    height: 2000px;
+    /* position: relative; */
+  }
+
+  .box {
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid #000;
+  }
+
+  .relative {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    background-color: lightblue;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: lightgreen;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: salmon;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 50;
+    background-color: khaki;
+  }
+</style>

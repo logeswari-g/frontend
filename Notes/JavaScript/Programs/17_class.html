@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Event Handlers Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button, input, form, textarea { margin: 10px 0; display: block; }
+    .box { width: 150px; height: 150px; background-color: lightblue; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Event Handlers</h1>
+
+  <!-- click and dblclick -->
+  <button id="clickBtn">Click Me</button>
+  <button id="dblClickBtn">Double Click Me</button>
+
+  <!-- mouseover and mouseout -->
+  <div id="hoverBox" class="box">Hover Me</div>
+
+  <!-- keydown and keyup -->
+  <input type="text" id="textInput" placeholder="Type something..." />
+
+  <!-- change -->
+  <input type="text" id="changeInput" placeholder="Change me..." />
+
+  <!-- submit -->
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Enter your name" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- load -->
+  <img id="demoImg" src="https://content.jdmagicbox.com/v2/comp/chennai/q5/044pxx44.xx44.240608142245.w2q5/catalogue/ednue-technologies-private-limited-egattur-chennai-computer-training-institutes-709c4ing9o.jpg" alt="Sample" width="500" height="300"/>
+
+  <script>
+    // click
+    document.getElementById("clickBtn").addEventListener("click", () => {
+      alert("Button Clicked!");
+    });
+
+    // dblclick
+    document.getElementById("dblClickBtn").addEventListener("dblclick", () => {
+      alert("Button Double Clicked!");
+    });
+
+    // mouseover & mouseout
+    const hoverBox = document.getElementById("hoverBox");
+    hoverBox.addEventListener("mouseover", () => {
+      hoverBox.style.backgroundColor = "lightgreen";
+      hoverBox.innerText = "Mouse Over";
+    });
+    hoverBox.addEventListener("mouseout", () => {
+      hoverBox.style.backgroundColor = "Yellow";
+      hoverBox.innerText = "Mouse out";
+    });
+
+    // keydown & keyup
+    const textInput = document.getElementById("textInput");
+    textInput.addEventListener("keydown", (event) => {
+      console.log("Key Down");
+    });
+    textInput.addEventListener("keyup", () => {
+      console.log("Key Up");
+    });
+
+    // change
+    document.getElementById("changeInput").addEventListener("change", (changeEvent) => {
+      alert("Input changed to: " + changeEvent.target.value);
+    });
+
+    // submit
+    document.getElementById("myForm").addEventListener("submit", (submitEvent) => {
+        // submitEvent.preventDefault();
+      alert("Form submitted!");
+    });
+
+    // load
+    document.getElementById("demoImg").addEventListener("load", () => {
+      console.log("Image loaded!");
+    });
+  </script>
+
+</body>
+</html>
